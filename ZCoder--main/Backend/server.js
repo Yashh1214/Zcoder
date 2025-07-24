@@ -12,9 +12,9 @@ const bodyParser = require('express').json;
 app.use(bodyParser());
 app.use(express.urlencoded({extended:true}));
 app.use(cors());
-
-connectToMongoDb('').then(()=>{
-    console.log('mongo connecrted')
+//add your server
+connectToMongoDb('').then(()=>{   
+    console.log('mongo connected')
 })
 
 
